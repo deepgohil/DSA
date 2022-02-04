@@ -336,6 +336,137 @@ public class dayfour {
 //     no=no+1;
 //     System.out.println("\n");
 // }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // https://nados.io/question/pattern-13 link
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// for (int i = 0; i < n; i++) {
+//         int num=1;
+
+//         for (int j = 0; j <= i; j++) {
+//                 System.out.print(num+"\t");
+//                 num=num*(i-j)/(j+1);
+//                 // num=newnum;
+//         }
+//         System.out.println();
+        
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // https://nados.io/question/pattern-14 link
+// print table
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// for(int i=1;i<=10;i++)
+// {
+//         System.out.println(n+" * "+i+" = "+n*i);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // https://nados.io/question/pattern-15 link(GOOD QUESTION)
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// int nst=1;
+// int nsp=n/2;
+// int row=1;
+// for(int i=1;i<=10;i++)
+// {       
+//         int number=row;
+//         for (int j = 1; j <=nsp; j++) {
+//                 System.out.print("\t");
+//         }
+//         for (int j = 1; j <=nst; j++) {
+               
+//                if(j<=nst/2)
+//                { System.out.print(number+"\t");
+//                         number++;
+//                }
+//                else{
+//                 System.out.print(number+"\t");
+//                 number--;
+//                }
+              
+//         }
+//         if(i<=n/2)
+//         {
+//         nsp--;
+//         nst++;
+//         nst++;
+//         row++;
+//         }
+//         else{
+//                 nsp++;
+//                 nst--;
+//                 nst--;
+//                 row--;
+//         }
+      
+//         System.out.println("");
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // // https://nados.io/question/pattern-16 link(GOOD QUESTION)
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// int nsp=2*n-3;
+// int nst=1;
+// for (int i = 1; i <= n; i++) {
+      
+//         for (int j = 1; j <= nst; j++) {
+//                 System.out.print(j+"\t");
+               
+//         }
+//         for (int j = 1; j <=nsp; j++) {
+//                 System.out.print("\t");   
+
+//         }
+//     if(i==n)
+//     {
+//             nst--;
+//     }
+//         for (int j = nst; j >= 1; j--) {
+//                 System.out.print(j+"\t");
+//         }
+
+//         nsp--;
+//         nsp--;
+//         nst++;
+//         System.out.println("");
+        
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // // https://nados.io/question/pattern-17 link(GOOD QUESTION).
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int nsp=n/2;
+int nst=1;
+for (int i = 1; i <= n; i++) {
+       
+        
+                for (int j = 1; j <=nsp; j++) {
+                        if(i==n/2+1)
+                                 System.out.print("*\t");
+                        else
+                        System.out.print("\t");
+
+                                       
+                                }
+
+     
+        for (int j = 1; j <= nst; j++) {
+                System.out.print("*\t");
+               
+        
+}
+        if(i<=n/2)
+        {
+                nst++;
+        }
+        else{
+                nst--;
+        }
+
+        System.out.println("");
+}
+
 }
     
 }

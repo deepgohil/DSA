@@ -434,38 +434,266 @@ public class dayfour {
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // // // https://nados.io/question/pattern-17 link(GOOD QUESTION).
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-int nsp=n/2;
-int nst=1;
-for (int i = 1; i <= n; i++) {
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// int nsp=n/2;
+// int nst=1;
+// for (int i = 1; i <= n; i++) {
        
         
-                for (int j = 1; j <=nsp; j++) {
-                        if(i==n/2+1)
-                                 System.out.print("*\t");
-                        else
-                        System.out.print("\t");
+//                 for (int j = 1; j <=nsp; j++) {
+//                         if(i==n/2+1)
+//                                  System.out.print("*\t");
+//                         else
+//                         System.out.print("\t");
 
                                        
-                                }
+//                                 }
 
      
-        for (int j = 1; j <= nst; j++) {
-                System.out.print("*\t");
+//         for (int j = 1; j <= nst; j++) {
+//                 System.out.print("*\t");
                
         
-}
-        if(i<=n/2)
-        {
-                nst++;
-        }
-        else{
-                nst--;
-        }
+// }
+//         if(i<=n/2)
+//         {
+//                 nst++;
+//         }
+//         else{
+//                 nst--;
+//         }
 
-        System.out.println("");
+//         System.out.println("");
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // // https://nados.io/question/pattern-18 link(GOOD QUESTION).
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// int nst=n;
+// int nsp=0;
+// for (int i = 1; i <= n; i++) {
+      
+//                 for (int j = 1; j <= nsp; j++) {
+                        
+//                         System.out.print("\t");
+                       
+                       
+//                 }
+//                 for (int j = 1; j <=nst; j++) {
+//                         if(i>1 && i<=n/2 && j>1 && j<nst)
+//                         {
+//                                 System.out.print("\t"); 
+//                         }
+//                         else{
+//                         System.out.print("*\t");   
+//                         }
+        
+//                 }
+//             if(i<=n/2)
+//             {
+//                     nsp++;
+//         nst--;
+//         nst--;
+//            }
+//            else{
+//                    nst++;
+//                    nst++;
+//                    nsp--;
+//            }
+        
+      
+//                 System.out.println("");
+                
+//         }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // // https://nados.io/question/pattern-18 link(GOOD QUESTION).
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// for (int i = 1; i <= n; i++) {
+//    for (int j = 1; j <= n; j++) {
+//            ///1st
+//          if(i==1)
+//          {
+//                 if(j==1 || (j>=n/2+1 && j<=n))
+//                 {
+//                         System.out.print("*\t");      
+//                 }
+//                 else
+//                 {
+//                        System.out.print("\t");   
+//                 }
+
+
+
+//                 //  if(j==n || j<=n/2+1)
+//                 //  {
+//                 //          System.out.print("*\t");
+//                 //  }
+//                 //  else
+//                 //  {
+//                 //         System.out.print("\t");   
+//                 //  }
+//          }
+//          //2nd
+//          else if(i>1 && i<n/2+1)
+//         {
+//                 // if(j==n || j==n/2+1)
+//                 // {
+//                 //         System.out.print("*\t");
+//                 // }
+//                 // else
+//                 // {
+//                 //        System.out.print("\t");   
+//                 // }
+
+//                 if(j==1 || j==n/2+1)
+//                 {
+//                         System.out.print("*\t");
+//                 }
+//                 else
+//                 {
+//                        System.out.print("\t");   
+//                 }
+//         }
+//         //3rd
+//         else if(i==n/2+1)
+//         {
+//                 System.out.print("*\t");
+//         }
+//         ///4th
+//         else if(i>n/2+1 && i<n)
+//         {
+//                 // if(j==1 || j==n/2+1)
+//                 // {
+//                 //         System.out.print("*\t");
+//                 // }
+//                 // else
+//                 // {
+//                 //        System.out.print("\t");   
+//                 // }
+
+
+//                 if(j==n || j==n/2+1)
+//                 {
+//                         System.out.print("*\t");
+//                 }
+//                 else
+//                 {
+//                        System.out.print("\t");   
+//                 }
+
+//         }
+//         else
+//         {
+
+//                 if(j==n || j<=n/2+1)
+//                 {
+//                         System.out.print("*\t");
+//                 }
+//                 else
+//                 {
+//                        System.out.print("\t");   
+//                 }
+
+//                 // if(j==1 || (j>=n/2+1 && j<=n))
+//                 // {
+//                 //         System.out.print("*\t");      
+//                 // }
+//                 // else
+//                 // {
+//                 //        System.out.print("\t");   
+//                 // }
+//         }
+        
+         
+           
+//    }     
+  
+//    System.out.println();
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // // https://nados.io/question/pattern-19 link(GOOD QUESTION).
+// Scanner sc=new Scanner(System.in);
+// int n=sc.nextInt();
+// for (int i = 1; i <= n; i++) {
+
+//         for (int j = 1; j <= n; j++) {
+//                 if(i<n/2+1)
+//                 {
+//                         if(j==1 || j==n)
+//                         {
+//                                 System.out.print("*\t");
+//                         }
+//                         else{
+//                                 System.out.print("\t");
+//                         }
+//                 }
+//                 else{
+//                         if(j==1 || i-j==0 || i+j==n+1 || j==n)
+//                         {
+//                                 System.out.print("*\t");     
+//                         }
+//                         else{
+//                                 System.out.print("\t");
+//                         }
+//                 }
+                
+//         }
+//         System.out.println();
+// }
+
+///////////////////////21extra M pattern
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for (int i = 1; i <= n; i++) {
+
+        for (int j = 1; j <= n; j++) {
+                if(i<n/2+1)
+                {
+                        if(j==1 || i-j==0 || i+j==n+1 || j==n)
+                        {
+                                System.out.print("*\t");     
+                        }
+                        else{
+                                System.out.print("\t");
+                        } 
+
+
+                        // if(j==1 || j==n)
+                        // {
+                        //         System.out.print("*\t");
+                        // }
+                        // else{
+                        //         System.out.print("\t");
+                        // }
+                }
+                else{
+
+                        if(j==1 || j==n)
+                        {
+                                System.out.print("*\t");
+                        }
+                        else{
+                                System.out.print("\t");
+                        }
+                        // if(j==1 || i-j==0 || i+j==n+1 || j==n)
+                        // {
+                        //         System.out.print("*\t");     
+                        // }
+                        // else{
+                        //         System.out.print("\t");
+                        // }
+                }
+                
+        }
+        System.out.println();
 }
+
+
+
+
 
 }
     

@@ -82,7 +82,81 @@ public class array {
 //         }
 //     }
 // }
-/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////sub array
+// public static int tobinary(int n) {
+//    int ans=0;
+ 
+//         int power=1;
+//         while(n!=0)
+//         {
+// int rem=n%2;
+// n/=2;
+// ans+=(rem*power);
+// power*=10;
+
+//         }
+    
+//     return ans;
+// }
+
+
+// public static void printdata(int arr[])
+// {
+// int size=(int)arr.length;
+// int ts=(int)Math.pow(2, size);
+
+// for(int i=0;i<ts;i++)
+// {
+
+// int binary=tobinary(i);
+// // System.out.println(binary);
+// int pow=(int)Math.pow(10,size-1 );
+// for (int j = 0; j < arr.length; j++) {
+//     int digit=binary/pow;
+//     int rem=binary%pow;
+//      if(digit==1)
+//    {
+//     System.out.print(arr[j]+"\t");
+//    } 
+//    else
+//    {
+//     System.out.print("_\t");   
+//    }
+//    binary=rem;
+//    digit=pow/=10;
+// }
+// System.out.println("");
+// }
+// }
+/////////////////////////////////////////////////////////////////////BINARY SEARCH
+public static int binarysearch(int arr[],int data) {
+    int index=-1;
+    int floor=-1;
+    int seal =-1;
+    int left=0;
+    int right=(int) arr.length-1;
+    while (left<=right) {
+        int mid=(left+right)/2;
+        if(arr[mid]==data)
+        {
+             return arr[mid];
+        }
+        else if(arr[mid]<data)
+        {
+            floor=arr[mid];
+            left=mid+1;
+        }
+        else
+        {
+            seal=arr[mid];
+            right=mid-1;
+        }
+        // return index;
+    }
+    System.out.println(seal+"\t"+floor);
+    return 0;
+}
+
     public static void main(String[] args) {
         // //////////////////////////////Q1 scale
         // Scanner sc=new Scanner(System.in);
@@ -138,8 +212,31 @@ public class array {
         // sumofarr(arr1, arr2);
 
         
-        /////////////////////////////////////////////////////////////////////////Q4
+        /////////////////////////////////////////////////////////////////////////Q4(HW) home work
 
+
+
+
+
+
+        /////////////////////////////////////////////sub set (array)
+        //  Scanner sc=new Scanner(System.in);
+        // int n1=sc.nextInt();
+        // int arr1[] =new int[n1];
+        // for (int i = 0; i < arr1.length; i++) {
+        //     arr1[i]=sc.nextInt();
+        // }
+        // printdata(arr1);
+
+        /////////////////////////////////////////////Binary search
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int arr1[] =new int[n1];
+        for (int i = 0; i < arr1.length; i++) {
+            arr1[i]=sc.nextInt();
+        }
+        int index=binarysearch(arr1,10);
+        System.err.println(index+"\t");
     }
     
 }

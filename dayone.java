@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class daythree {
     public static void main(String[] args) {
+        ///
         // prime vado code in root time
     //   Scanner sc=new Scanner(System.in);
     //   int t=sc.nextInt();

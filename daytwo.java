@@ -42,7 +42,7 @@ public class daythree {
 // i++;
 // }
 // System.out.println(i);
-////////////////////reverse number
+////////////////////reverse input number 
 // Scanner sc=new Scanner(System.in);
 // int num=sc.nextInt();
 // int rem=0;

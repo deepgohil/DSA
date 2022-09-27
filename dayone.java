@@ -19,7 +19,7 @@ public class daythree {
     //           System.out.println("prime");
     //       }
     //       else{
-    //           System.out.println("Not prime");
+    //           System.out.println("Not prime number");
     //       }
     //   }
 

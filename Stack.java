@@ -341,3 +341,47 @@
 
 //  }
 // }
+
+
+
+
+// ///////////////////////incomplete infix eval
+import java.io.*;
+import java.util.*;
+
+public class Main{
+  
+
+public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    String exp = br.readLine();
+
+    Stack<Integer> oprand=new Stack<>();
+    Stack<Charactor> oprator=new Stack<>();
+
+
+    for (int i = 0; i < exp.length(); i++) {
+        char ch=exp.charAt(i);
+        if(ch>='0'&&ch<='9')
+        {
+            oprand.push(Integer.parse(ch+''));
+        }
+        if(ch=='+' ||ch=='-' ||ch=='*' ||ch=='/')
+        {
+            while(oprator.size()>0 && )
+        }
+
+    }
+ 
+ 
+    // code
+ }
+ public static void eval(Stack<Integer> opraNd,char opr)
+ {
+     int val_2=opraNd.pop(),val_1=opraNd.pop();
+     if(ch=='+') opraNd.push(val_1+val_2);
+     if(ch=='-') opraNd.push(val_1-val_2);
+     if(ch=='*') opraNd.push(val_1*val_2);
+     if(ch=='/') opraNd.push(val_1/val_2);
+ }
+}

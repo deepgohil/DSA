@@ -346,42 +346,85 @@
 
 
 // ///////////////////////incomplete infix eval
-import java.io.*;
-import java.util.*;
+// import java.io.*;
+// import java.util.*;
 
-public class Main{
+// public class Main{
   
 
-public static void main(String[] args) throws Exception {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    String exp = br.readLine();
+// public static void main(String[] args) throws Exception {
+//     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//     String exp = br.readLine();
 
-    Stack<Integer> oprand=new Stack<>();
-    Stack<Charactor> oprator=new Stack<>();
+//     Stack<Integer> oprand=new Stack<>();
+//     Stack<Character> oprator=new Stack<>();
 
 
-    for (int i = 0; i < exp.length(); i++) {
-        char ch=exp.charAt(i);
-        if(ch>='0'&&ch<='9')
-        {
-            oprand.push(Integer.parse(ch+''));
-        }
-        if(ch=='+' ||ch=='-' ||ch=='*' ||ch=='/')
-        {
-            while(oprator.size()>0 && )
-        }
+//     for (int i = 0; i < exp.length(); i++) {
+//         char ch=exp.charAt(i);
+//         if(ch>='0'&&ch<='9')
+//         {
+//             oprand.push(Integer.parseInt(ch+""));
+//         }
+//         else if(ch=='+' || ch=='-' || ch=='*' || ch=='/')
+//         {
+//             while(oprator.size()>0 && oprator.peek()!='(' && prec(ch)>=prec(oprator.peek()))
+//             {
+//                 char m_oprn=oprator.peek();
+//                 eval(oprand,m_oprn);
+//             }
+//             oprator.push(ch);
+//         }
+//         else if(ch=='(')
+//         {
+//             oprator.push(ch);
 
-    }
+//         }
+//         else if(ch==')')
+//         {
+//             while(oprator.peek()!='(')
+//             {
+//                 char oprn=oprator.peek();
+//                 eval(oprand,oprn);
+//             }
+//           oprator.pop();  
+//         }
+        
+
+//     }
+//   while(oprator.size()>0)
+//     {
+//     char m_oprn=oprator.pop();
+//     eval(oprand,m_oprn);
+//     }
+
+//     System.out.println(oprand.peek());
  
- 
-    // code
- }
- public static void eval(Stack<Integer> opraNd,char opr)
- {
-     int val_2=opraNd.pop(),val_1=opraNd.pop();
-     if(ch=='+') opraNd.push(val_1+val_2);
-     if(ch=='-') opraNd.push(val_1-val_2);
-     if(ch=='*') opraNd.push(val_1*val_2);
-     if(ch=='/') opraNd.push(val_1/val_2);
- }
-}
+//     // code
+//  }
+//  public static void eval(Stack<Integer> opraNd,char ch)
+//  {
+//      int val_2=opraNd.pop(),val_1=opraNd.pop();
+//      if(ch=='+') opraNd.push(val_1+val_2);
+//      else if(ch=='-') opraNd.push(val_1-val_2);
+//      else if(ch=='*') opraNd.push(val_1*val_2);
+//      else if(ch=='/') opraNd.push(val_1/val_2);
+//  }
+
+//   public static int prec(char opr)
+// { 
+// if(opr=='+')
+// {
+//     return 1;
+// }
+// if(opr=='-')
+// {
+//     return 1;
+// }
+// else 
+// {
+//     return 2;
+// }
+
+//  }
+// }
